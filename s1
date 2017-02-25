@@ -1,0 +1,17 @@
+{
+    "deviceType": "switch",
+    "dimUrl": "",
+    "id": "11",
+    "inactive": false,
+    "name": "Stereo",
+    "noState": false,
+    "offUrl": "",
+    "onUrl": "[{  -- Broke
+      \"item\":\"http://Penny:51826/characteristics\",
+      \"type\":\"httpDevice\",
+      \"httpVerb\":\"PUT\",
+      \"httpBody\":\"{ \\\"characteristics\\\": [{\\\"aid\\\":56,\\\"iid\\\":9,\\\"value\\\":1}] }\",
+      \"httpHeaders\":\\\"[{\\\"name\\\":\\\"authorization\\\",\\\"value\\\":\\\"031-45-154\\\"}]\",
+      \"contentType\":\"application/json\"}]",
+    "uniqueid": "00:17:88:5E:D3:0B-0B"
+}

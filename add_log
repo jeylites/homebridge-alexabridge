@@ -1,0 +1,16 @@
+2017-02-25 12:31:53,731 [qtp1665531278-31] DEBUG spark.webserver.MatcherFilter - httpMethod:post, uri: /api/devices
+2017-02-25 12:31:53,731 [qtp1665531278-31] DEBUG spark.Request - get params
+2017-02-25 12:31:53,731 [qtp1665531278-31] DEBUG spark.Request - get splat
+2017-02-25 12:31:53,732 [qtp1665531278-31] DEBUG com.bwssystems.HABridge.devicemanagmeent.DeviceResource - Create a Device(s) - request body: {"name":"test","deviceType":"switch","id":null,"mapType":null,"onUrl":"[{\"item\":\"http://Penny:51826/characteristics\",\"type\":\"httpDevice\",\"httpVerb\":\"PUT\",\"httpBody\":\"{ \\\"characteristics\\\": [{\\\"aid\\\":56,\\\"iid\\\":9,\\\"value\\\":1}] }\",\"httpHeaders\":\"[{\\\"name\\\":\\\"authorization\\\",\\\"value\\\":\\\"031-45-154\\\"}]\",\"contentType\":\"application/json\"}]"}
+2017-02-25 12:31:53,749 [qtp1665531278-31] DEBUG com.bwssystems.HABridge.dao.DeviceRepository - Save device(s):  test, 
+2017-02-25 12:31:53,750 [qtp1665531278-31] DEBUG com.bwssystems.HABridge.devicemanagmeent.DeviceResource - Created a Device(s): {"name":"test","deviceType":"switch","id":null,"mapType":null,"onUrl":"[{\"item\":\"http://Penny:51826/characteristics\",\"type\":\"httpDevice\",\"httpVerb\":\"PUT\",\"httpBody\":\"{ \\\"characteristics\\\": [{\\\"aid\\\":56,\\\"iid\\\":9,\\\"value\\\":1}] }\",\"httpHeaders\":\"[{\\\"name\\\":\\\"authorization\\\",\\\"value\\\":\\\"031-45-154\\\"}]\",\"contentType\":\"application/json\"}]"}
+
+
+
+2017-02-25 12:33:02,259 [qtp1665531278-24] DEBUG com.bwssystems.HABridge.hue.HueMulator - hue state change requested: test from 0:0:0:0:0:0:0:1 body: {"on":true}
+2017-02-25 12:33:02,259 [qtp1665531278-24] DEBUG com.bwssystems.HABridge.hue.HueMulator - Decode Json for url items: [{"item":"http://Penny:51826/characteristics","type":"httpDevice","httpVerb":"PUT","httpBody":"{ \"characteristics\": [{\"aid\":56,\"iid\":9,\"value\":1}] }","httpHeaders":"[{\"name\":\"authorization\",\"value\":\"031-45-154\"}]","contentType":"application/json"}]
+2017-02-25 12:33:02,259 [qtp1665531278-24] DEBUG com.bwssystems.HABridge.plugins.http.HTTPHome - executing HUE api request to Http PUT: http://Penny:51826/characteristics
+2017-02-25 12:33:02,262 [qtp1665531278-24] DEBUG com.bwssystems.HABridge.plugins.http.HTTPHandler - doHttpRequest with url: http://Penny:51826/characteristics with http command: PUT with body: { "characteristics": [{"aid":56,"iid":9,"value":1}] }
+2017-02-25 12:33:02,273 [qtp1665531278-24] DEBUG com.bwssystems.HABridge.plugins.http.HTTPHandler - Making outbound call in doHttpRequest: PUT http://Penny:51826/characteristics HTTP/1.1
+2017-02-25 12:33:03,557 [qtp1665531278-24] DEBUG com.bwssystems.HABridge.plugins.http.HTTPHandler - PUT execute on URL responded: 207
+

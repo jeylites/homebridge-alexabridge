@@ -1,0 +1,31 @@
+curl http://localhost:8080/  --{"id":"19","uniqueid":"00:17:88:5E:D3:13-13","name":"Test","deviceType":"switch","onUrl":"[{\"item\"
+:\"http://Penny:51826/characteristics\",\"type\":\"httpDevice\",\"httpVerb\":\"PUT\",\"httpBody\":\"
+{ \\\"characteristics\\\": [{\\\"aid\\\":56,\\\"iid\\\":9,\\\"value\\\":1}] }\",\"httpHeaders\":\"[{
+\\\"name\\\":\\\"authorization\\\",\\\"value\\\":\\\"031-45-154\\\"}]\",\"contentType\":\"application
+/json\"}]","inactive":false,"noState":false,"mapType":null}
+
+{"id":"19","uniqueid":"00:17:88:5E:D3:13-13","name":"Test","deviceType":"switch","onUrl":"[{\"item\"
+:\"http://Penny:51826/characteristics\",\"type\":\"httpDevice\",\"httpVerb\":\"PUT\",\"httpBody\":\"
+{ \\\"characteristics\\\": [{\\\"aid\\\":56,\\\"iid\\\":9,\\\"value\\\":1}] }\",\"httpHeaders\":\"[{
+\\\"name\\\":\\\"authorization\\\",\\\"value\\\":\\\"031-45-154\\\"}]\",\"contentType\":\"application
+/json\"}]","inactive":false,"noState":false,"mapType":null}
+
+POST that Works
+
+{"name":"Test","id":null,"mapType":null,"onUrl":"[{\"item\":\"http://Penny:51826/characteristics\",\"type
+\":\"httpDevice\",\"httpVerb\":\"PUT\",\"httpBody\":\"{ \\\"characteristics\\\": [{\\\"aid\\\":56,\\
+\"iid\\\":9,\\\"value\\\":1}] }\",\"httpHeaders\":\"[{ \\\"name\\\":\\\"authorization\\\",\\\"value\
+\\":\\\"031-45-154\\\"}]\",\"contentType\":\"application/json\"}]"}
+
+Response
+
+[{"id":"20","uniqueid":"00:17:88:5E:D3:14-14","name":"Test","onUrl":"[{\"item\":\"http://Penny:51826
+/characteristics\",\"type\":\"httpDevice\",\"httpVerb\":\"PUT\",\"httpBody\":\"{ \\\"characteristics
+\\\": [{\\\"aid\\\":56,\\\"iid\\\":9,\\\"value\\\":1}] }\",\"httpHeaders\":\"[{ \\\"name\\\":\\\"authorization
+\\\",\\\"value\\\":\\\"031-45-154\\\"}]\",\"contentType\":\"application/json\"}]","inactive":false,"noState"
+:false}]
+
+{ "characteristics": [{"aid":56,"iid":9,"value":1}] }
+
+[{ "name":"authorization","value":"031-45-154"}]
+

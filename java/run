@@ -1,0 +1,2 @@
+rm -rf data/device.db
+java -jar -Dserver.port=8080 ha-bridge-4.1.4.jar
