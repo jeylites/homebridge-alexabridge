@@ -22,6 +22,13 @@
       \"httpHeaders\":\"[{\"name\":\"authorization\",\"value\":\"031-45-154\"}]\",
       \"contentType\":\"application/json\"}]",
 
+    "onUrl": "[{  -- Broke
+      \"item\":\"http://penny.local.:51826/characteristics\",
+      \"type\":\"httpDevice\",\"httpVerb\":\"PUT\",
+      \"httpBody\":\"{ \\\"characteristics\\\": [{\\\"aid\\\":56,\\\"iid\\\":9,\\\"value\\\":1}] }\",
+      \"httpHeaders\":\\\"[{\\\"name\\\":\\\"authorization\\\",\\\"value\\\":\\\"031-45-154\\\"}]\",
+      \"contentType\":\"application/json\"}]",
+
     "onUrl": "[{   -- Work
       \"item\":\"http://penny.local.:51826/characteristics\",
       \"type\":\"httpDevice\",
