@@ -31,9 +31,22 @@ accessories are not supported, and can not be supported.
 
 # Installation and Setup
 
-npm install -g https://github.com/NorthernMan54/homebridge-alexabridge
+## Installation
 
-# config.json
+npm install https://github.com/NorthernMan54/homebridge-alexabridge
+
+## Configuration
+
+* Inside index.js
+
+var pin = "031-45-154";
+var haBridgePort = 8081;
+
+## Running
+
+node index.js
+
+# config.json - Not needed at this time
 
 ```
 {
