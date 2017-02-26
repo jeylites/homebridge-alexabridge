@@ -14,8 +14,8 @@ brightness is included.
 and does not need to be added on the Home app.
 * The plugin does not need to be installed in your 'main' homebridge instance.  It
 can be installed in a standalone 'Homebridge' instance beside your main instance.
-* Uses BWS Systems HA Bridge to interface between Alex and HomeBridge
-* Requires an actual Amazon Echo, Dot or Dash and will not work with AlexaPi or the
+** Uses BWS Systems HA Bridge to interface between Alex and HomeBridge
+** Requires an actual Amazon Echo, Dot or Dash and will not work with AlexaPi or the
 RaspberryPI Based Alexa AVS Sample.
 
 Alexa device names are the same as the homebridge device names.

@@ -1,28 +1,38 @@
-//var wemore = require('wemore');
+"use strict";
+
+var spawn = require('child_process').spawn;
 var hb = require('./lib/hb.js');
-var devices = [];
 
 var log = console.log;
 
-this.pin = "031-45-154";
+var pin = "031-45-154";
+var haBridgePort = 8081;
 
-hb.discoverHap(log, this.pin);
-
-
-
+var haBridgeUrl = "http://localhost:"+haBridgePort;
 
 
-//devices[0] = { friendlyName: "TV", port: 9001};
-//devices[1] = { friendlyName: "Door", port: 9002};
+// Clean up prior to running ha-bridge
 
-//for ( i = 0; i < devices.length; i++ )
-//  {
-//    var device = wemore.Emulate( devices[i] );
-//    device.on('on', function(data) {
-//        console.log("TV turned on",data.friendlyName);
-//    });
+var cleanup = spawn("rm",["data/device.db"]);
 
-//    device.on('off', function(data) {
-//        console.log("TV turned off",data.friendlyName);
-//    });
-//  }
+// Start ha-bridge
+
+var haBridge = spawn("java", ["-jar","-Dserver.port="+haBridgePort, "java/ha-bridge-4.1.4.jar"]);
+haBridge.on('error', function(data) {
+    log('HA Bridge Error',data);
+});
+haBridge.stdout.on('data', function(data) {
+    log('HA Bridge',data.toString());
+});
+haBridge.stderr.on('data', function(data) {
+    log('Err HA Bridge',data.toString());
+});
+haBridge.on('close', function(code) {
+    log('ha-bridge Process ended. Code: ' + code);
+});
+
+// Discover HomeBridge Devices after 5 seconds
+
+setTimeout(function() {
+  hb.discoverHap(log, pin,haBridgeUrl);
+}, 5000);
