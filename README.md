@@ -1,6 +1,6 @@
 # homebridge-alexabridge
 
-## I have abandoned this approach of integration between Alexa and Homebridge, due to the complexities of adding HA-Bridge to the mix, and have switch to an easier method of integration with a version of homebridge and hap-nodesjs that mimics what HA-Bridge was doing.   Please see https://github.com/NorthernMan54/homebridge-alexa for instructions on implementing this.
+## I have abandoned this approach of integration between Alexa and Homebridge, due to the complexities of adding HA-Bridge to the mix, and have switched to an easier method of integration with a version of homebridge and hap-nodesjs that mimics what HA-Bridge was doing.   Please see https://github.com/NorthernMan54/homebridge-alexa for instructions on implementing this.
 
 
 Amazon Alexa to homebridge interface.   Using the insecure mode of Homebridge ( -I )
