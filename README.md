@@ -1,5 +1,8 @@
 # homebridge-alexabridge
 
+## I have abandoned this approach of integration between Alexa and Homebridge, due to the complexities of adding HA-Bridge to the mix, and have switch to an easier method of integration with a version of homebridge and hap-nodesjs that mimics what HA-Bridge was doing.   Please see https://github.com/NorthernMan54/homebridge-alexa for instructions on implementing this.
+
+
 Amazon Alexa to homebridge interface.   Using the insecure mode of Homebridge ( -I )
 to bridge from Amazon Alexa to homebridge.  Homebridge instances are autodiscovered
 at startup by looking for 'hap' devices.   This is an alpha release of code, and
